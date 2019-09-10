@@ -36,7 +36,7 @@ public class BasicTestIT extends DriverBase {
         driver.get(resultsPage.getLinkByIndex(resultsPage.getResults(), 0));
         assertThat(driver.getTitle().contains("automation"));
     }
-
+//Незакінчене, неправильна перевірка
     @Test
     public void searchDomain() {
         driver.get("https://www.google.com");
