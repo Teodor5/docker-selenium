@@ -1,0 +1,10 @@
+/home/pbod/IdeaProjects/test-task/src/test/java/com/masteringselenium/listeners/ScreenshotListener.java
+/home/pbod/IdeaProjects/test-task/src/test/java/com/masteringselenium/page_objects/GooglePage.java
+/home/pbod/IdeaProjects/test-task/src/test/java/com/masteringselenium/page_objects/SearchResultsPage.java
+/home/pbod/IdeaProjects/test-task/src/test/java/com/masteringselenium/page_objects/BasePage.java
+/home/pbod/IdeaProjects/test-task/src/test/java/com/masteringselenium/config/DriverSetup.java
+/home/pbod/IdeaProjects/test-task/src/test/java/com/masteringselenium/tests/BasicTest.java
+/home/pbod/IdeaProjects/test-task/src/test/java/com/masteringselenium/config/DriverFactory.java
+/home/pbod/IdeaProjects/test-task/src/test/java/com/masteringselenium/config/DriverType.java
+/home/pbod/IdeaProjects/test-task/src/test/java/com/masteringselenium/aspect/LoggableAspect.java
+/home/pbod/IdeaProjects/test-task/src/test/java/com/masteringselenium/DriverBase.java

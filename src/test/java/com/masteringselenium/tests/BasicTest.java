@@ -19,7 +19,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
-public class BasicTestIT extends DriverBase {
+public class BasicTest extends DriverBase {
 
     private RemoteWebDriver driver;
 
@@ -29,7 +29,7 @@ public class BasicTestIT extends DriverBase {
     }
 
     @Test
-    public void searchAutomationinTitle() {
+    public void searchAutomationinTitleTest() {
         driver.get("https://www.google.com");
         GooglePage page = PageFactory.initElements(driver, GooglePage.class);
         SearchResultsPage resultsPage = page.searchFor("automation");
@@ -38,7 +38,7 @@ public class BasicTestIT extends DriverBase {
     }
 
     @Test
-    public void searchDomain() {
+    public void searchDomainTest() {
         driver.get("https://www.google.com");
         GooglePage page = PageFactory.initElements(driver, GooglePage.class);
         SearchResultsPage resultsPage = page.searchFor("automation");
