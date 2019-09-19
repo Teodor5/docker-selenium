@@ -1,5 +1,5 @@
 <aspectj>
     <aspects>
-        <aspect name="com.example.aspect.LoggableAspect"/>
+        <aspect name="com.masteringselenium.aspect.LoggableAspect"/>
     </aspects>
 </aspectj>
