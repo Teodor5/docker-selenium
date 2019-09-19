@@ -10,11 +10,11 @@ import org.testng.annotations.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class BasicTest extends DriverBase {
+
     @DataProvider(name = "data-provider")
     public Object[] dataProviderMethod() {
         return new Object[][]{{"automation"}};
     }
-
 
     @Test(dataProvider = "data-provider")
     public void searchAutomationInTitleTest(String text) {
