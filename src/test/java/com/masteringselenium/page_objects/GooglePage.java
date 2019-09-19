@@ -16,7 +16,6 @@ public class GooglePage extends BasePage {
 
     public GooglePage() {
         this.webdriver = driver;
-        PageFactory.initElements(webdriver, this);
     }
 
     public GooglePage open(String url){

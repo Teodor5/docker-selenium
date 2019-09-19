@@ -19,7 +19,6 @@ public class SearchResultsPage extends BasePage{
 
     public SearchResultsPage() {
         this.webdriver = driver;
-        PageFactory.initElements(webdriver, this);
     }
 
     @FindBy(css = "#res .g")
