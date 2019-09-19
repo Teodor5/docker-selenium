@@ -19,7 +19,7 @@ import org.openqa.selenium.safari.SafariOptions;
 
 import java.util.HashMap;
 
-public enum DriverType implements DriverSetup {
+public enum DriverType {
 
     FIREFOX {
         public RemoteWebDriver getWebDriverObject(DesiredCapabilities capabilities) {
@@ -87,4 +87,9 @@ public enum DriverType implements DriverSetup {
     };
 
     public final static boolean HEADLESS = Boolean.getBoolean("headless");
+
+
+    public RemoteWebDriver getWebDriverObject(DesiredCapabilities desiredCapabilities) {
+        return null;
+    }
 }

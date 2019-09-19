@@ -19,6 +19,14 @@ public class GooglePage extends BasePage {
         PageFactory.initElements(webdriver, this);
     }
 
+    public GooglePage open(String url){
+        webdriver.get(url);
+        return this;
+    }
+
+    public String getTitle(){
+       return webdriver.getTitle();
+    }
     @Step
     public SearchResultsPage searchFor(String text) {
         log.info("About to search text [ " + text + " ]");

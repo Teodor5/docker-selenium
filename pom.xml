@@ -16,6 +16,16 @@
         <java.version>1.9</java.version>
         <aspectj.version>1.9.4</aspectj.version>
         <assertj-core.version>3.10.0</assertj-core.version>
+        <!-- Configurable variables -->
+        <threads>1</threads>
+        <browser>chrome</browser>
+        <overwrite.binaries>false</overwrite.binaries>
+        <headless>true</headless>
+        <remote>false</remote>
+        <seleniumGridURL/>
+        <platform/>
+        <browserVersion/>
+        <screenshotDirectory>${project.build.directory}/screenshots</screenshotDirectory>
     </properties>
 
     <dependencies>
@@ -86,6 +96,17 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
+                    <parallel>methods</parallel>
+                    <threadCount>${threads}</threadCount>
+                    <systemPropertyVariables>
+                        <browser>${browser}</browser>
+                        <headless>${headless}</headless>
+                        <remoteDriver>${remote}</remoteDriver>
+                        <gridURL>${seleniumGridURL}</gridURL>
+                        <desiredPlatform>${platform}</desiredPlatform>
+                        <desiredBrowserVersion>${browserVersion}</desiredBrowserVersion>
+                        <screenshotDirectory>${screenshotDirectory}</screenshotDirectory>
+                    </systemPropertyVariables>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
